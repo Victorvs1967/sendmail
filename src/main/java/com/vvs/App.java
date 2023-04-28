@@ -31,7 +31,7 @@ public class App
         // get the sesstion object and pass username/password (password to application!)
         Session session = Session.getInstance(properties, new Authenticator() {
            protected PasswordAuthentication getPasswordAuthentication() {
-            return new PasswordAuthentication("victorsmirnov67@gmail.com", "vzxropagasjdrrgt");
+            return new PasswordAuthentication("${MAIL_LOGIN}", "${MAIL_PASSWORD}");
            }
         });
 
